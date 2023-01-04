@@ -1,0 +1,36 @@
+@media(max-width: 1000px) {
+    .header-left{
+        text-align: center;
+        float: none;
+    }
+
+    .header-right {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-right ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-right ul li{
+        float:none;
+        padding: 10px;
+        flex: auto;
+    }
+    .example {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    .top-wrapper {
+        padding-top: 300px;
+    }
+
+    .example {
+        width: 100%;
+    }
+}
