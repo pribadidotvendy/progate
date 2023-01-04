@@ -1,0 +1,155 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: darkslateblue;
+    overflow: hidden;
+    color:#fff;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.header-left {
+    float:left;
+    font-size: 32px;
+    padding: 30px 40px;
+    letter-spacing: 5px;
+}
+
+.header-right li{
+    float:left;
+    padding: 40px 20px
+}
+
+.top-wrapper {
+    padding: 150px 0 100px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+    font-size: 64px;
+    font-weight: bolder;
+    color: darkslateblue;
+    letter-spacing: 5px;
+}
+
+.top-wrapper span {
+    color:darkorange;
+}
+
+.top-wrapper p {
+    font-size: 32px;
+    font-weight: bold;
+    color:darkslateblue;
+}
+
+.top-wrapper img {
+    width: 250px;
+    padding: 50px 0;
+}
+
+.about-wrapper {
+    padding: 100px 50px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: darkslateblue;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    padding-bottom: 50px
+}
+
+.about-wrapper p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-wrapper {
+    padding: 100px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: darkslateblue;
+    overflow: hidden;
+}
+
+.project-wrapper img {
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+.example {
+    float: left;
+    width: 33%;
+}
+
+.example p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-wrapper {
+    padding: 100px 50px;
+    text-align: center;
+    color: #fff;
+    background-color: darkslateblue;
+}
+
+input, textarea{
+    display: block;
+    margin: 20px auto;
+    width: 75%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: darkslateblue;
+    border: 1px solid darkslateblue;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid darkslateblue;
+}
+
+
+footer {
+    color: darkslateblue;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.footer-left {
+    float:left;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.footer-right {
+    float:right;
+}
+
+.footer-right li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
