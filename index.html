@@ -33,17 +33,27 @@
         </div>
         <div class="project-wrapper">
             <h2>Proyek Contoh</h2>
-            <div class="example">
-                <img src="assets/images/1.png">
-                <p>Image 1</p>
-            </div>
-            <div class="example">
-                <img src="assets/images/2.png">
-                <p>Image 2</p>
-            </div>
-            <div class="example">
-                <img src="assets/images/3.png">
-                <p>Image 3</p>
+            <div class="image-wrapper">
+                <div class="example">
+                    <img src="assets/images/1.png">
+                    <p>Image 1</p>
+                </div>
+                <div class="example">
+                    <img src="assets/images/2.png">
+                    <p>Image 2</p>
+                </div>
+                <div class="example">
+                    <img src="assets/images/3.png">
+                    <p>Image 3</p>
+                </div>
+                <div class="example">
+                    <img src="assets/images/3.png">
+                    <p>Image 4</p>
+                </div>
+
+                <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+      
+                <a class="next" onclick="updateSlide(1)">&#10095;</a>
             </div>
         </div>
         <div class="contact-wrapper">
@@ -65,5 +75,29 @@
             </ul>
         </div>
     </footer>
+    <script>
+        let slideIndex = 0;
+
+        const updateSlide = (n) => {
+            slideIndex += n;
+            showSlide(slideIndex);
+        }
+
+        const showSlide = (n) => {
+            const slides = document.getElementsByClassName("example");
+            if(n > slides.length - 1) {
+                slideIndex = 0;
+            }
+            if( n < 0 ) {
+                slideIndex = slides.length -1 ;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "block";
+            }
+            slides [slideIndex].style.display = "none";
+        }
+
+        showSlide(slideIndex);
+    </script>
 </body>
 </html>
